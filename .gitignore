@@ -1,8 +1,5 @@
 ### My files ###
-deposits.csv
-deposits-output.csv
-withdrawals.csv
-withdrawals-output.csv
+*.csv
 
 
 HELP.md
