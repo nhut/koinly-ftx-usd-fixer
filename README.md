@@ -16,5 +16,5 @@ Fixes Koinly with FTX stable coin USD issue.
 * (Windows) mvnw spring-boot:run
 * (Linux) ./mvnw spring-boot:run
 9. Open web browser and go to your Koinly FTX wallet (https://app.koinly.io/p/wallets)
-10. Click "Import file" and then drag and drop file to it.
-11. Click "Import" button and then you are done.
+10. Click "Import file" and then drag and drop "-output.csv"-ending file to it.
+11. Click "Import" button, and then you are done.
