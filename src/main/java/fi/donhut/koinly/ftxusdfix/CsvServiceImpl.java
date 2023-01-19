@@ -8,6 +8,7 @@ import fi.donhut.koinly.ftxusdfix.ftx.AbstractFTXCsvRow;
 import fi.donhut.koinly.ftxusdfix.ftx.FTXDepositCsvRow;
 import fi.donhut.koinly.ftxusdfix.ftx.FTXWithdrawCsvRow;
 import fi.donhut.koinly.ftxusdfix.ftx.FileType;
+import fi.donhut.koinly.ftxusdfix.ftx.Label;
 import fi.donhut.koinly.ftxusdfix.koinly.KoinlyCsvRow;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
@@ -58,7 +59,7 @@ public class CsvServiceImpl implements CsvService {
                 fixRow.setTransactionId(originalRow.getTransactionId());
                 fixRow.setSentAmount(originalRow.getAmount());
                 fixRow.setReceivedAmount(originalRow.getAmount());
-                fixRow.setLabel("Swap");
+                fixRow.setLabel(Label.SWAP.getValue());
 
                 Instant rowFixTime = originalRow.getTime();
                 if (fileType == FileType.WITHDRAW) {
